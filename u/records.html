@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- fontaswome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="icon" href="../img/brand-icon.ico">
+    <title>Bit Race -Bug Tracking</title>
+  </head>
+  <body>
+    <!-- nav starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="../img/brand-logo.png" alt="Brand name">  BitRace</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+        <a href="#" class="btn btn-warning btn-md ">Add Record <i class="fas fa-plus-circle"></i></a>
+        </span>
+      </div>
+    </nav>
+    <!-- nav ends here.. -->
+
+    <!-- breadcrumb starts here -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">Records</li>
+      </ol>
+    </nav>
+    <!-- breadcrumb ends here...-->
+
+    <!-- Project starts here -->
+    <section class="px-3">
+      <h3 class="text-center mb-5">Records</h3>
+      <table class="table table-hover text-center" width="100%">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>ReportID</th>
+            <th>Submited By</th>
+            <th>Title</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>15/12/2020</td>
+            <td>R16102020054637</td>
+            <td>Santu (Admin)</td>
+            <td class="text-danger">Bugs detected in update.php line 46</td>
+            <td><p class="badge badge-danger">High</p> </td>
+            <td>
+              <select class="form-control" name="" onload="update();" onchange="update();" id="status">
+                <option value="Solved">Solved</option>
+                <option value="Pending" selected>Pending</option>
+                <option value="Working">Working</option>
+            </select>
+
+  <script>
+    function update()
+    {
+      var a = $("#status").val();
+        if (a=="Solved")
+        {
+          $("#status").addClass("badge badge-success");
+          $("#status").removeClass("badge badge-danger");
+          $("#status").removeClass("badge badge-warning");
+
+        }else if (a=="Pending")
+        {
+          $("#status").addClass("badge badge-danger");
+          $("#status").removeClass("badge badge-success");
+          $("#status").removeClass("badge badge-warning");
+
+        }else if (a=="Working")
+        {
+          $("#status").addClass("badge badge-warning");
+          $("#status").removeClass("badge badge-danger");
+          $("#status").removeClass("badge badge-success");
+        }
+      alert("You have changed Status to "+a);
+    }
+    update();
+  </script>
+
+          </td>
+
+            <td>
+              <a href="#" class="btn btn-info btn-sm"><i class="fas fa-info-circle"></i></a>
+              <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
+              <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-minus-circle"></i></a>
+
+
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- Project ends here   -->
+
+  <div style="height:40vh"></div>
+
+  <footer><p class="text text-center">BitRace Copyright &copy; 2021 Copyright Holder All Rights Reserved.</p> </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
