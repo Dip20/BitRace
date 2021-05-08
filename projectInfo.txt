@@ -1,0 +1,36 @@
+Aim of the project:
+  1. Make a easy to use bug tracking project.
+  2. Add manage project
+  3. assign and team members
+  4. multiple login
+
+
+# Home Page>
+      1. projects (view project or enter into project btn)
+      2. add project button
+      3. application settings
+
+# project details
+      1. project info
+      2. graph
+      3. view records
+      4. settings
+
+# project Settings Page
+      1. view activity
+      2. archive project
+      3. delete project
+      4. rename project
+      5. close project
+
+# view records
+    1. record brief
+    2. view record
+    3. action button
+
+___________________________________________________________________
+Project flow
+1. user login
+2. project dashboard
+3. create project
+4. 
