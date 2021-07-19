@@ -1,0 +1,15 @@
+1. Bugs tracking and managing.
+
+2. generate & Manage API.
+3. we can integrate the API with our serval app to get the error and Bugs..
+
+
+=============================   Portal for public  ===========================================
+
+4. Portal for report bugs, Feedback, Suggestion new software , Update, change request.
+
+
+NOTE: There are only two major usages of this application>> one is manage the bugs and track the status.
+  and two is a complete portal for report bugs Suggestion and many more thing.
+
+  

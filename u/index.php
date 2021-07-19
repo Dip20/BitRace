@@ -14,42 +14,7 @@
   </head>
   <body>
     <!-- nav starts here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html"><img src="../img/brand-logo.png" alt="Brand name">  BitRace</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-users-cog"></i> Users</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-tools"></i> App Settings</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-  haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-shield"></i>  Profile
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Settings</a>
-              <a class="dropdown-item" href="#">Change Password</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
-            </div>
-        </li>
-        </ul>
-        <span class="navbar-text">
-        <a href="#" class="btn btn-warning btn-sm text-white " data-toggle="modal" data-target="#staticBackdrop">Add Project <i class="fas fa-plus-circle"></i></a>
-
-        <a href="#" class="btn btn-danger btn-sm text-white ">Closed <i class="far fa-clock"></i></a>
-
-        </span>
-      </div>
-    </nav>
+    <?php require_once("nav.php"); ?>
     <!-- nav ends here.. -->
 
     <!-- breadcrumb starts here -->
@@ -63,13 +28,13 @@
 
     <!-- Project starts here -->
     <div class="container text-center" id="welcome-container">
-        <h5 class="text-center mb-5"><i class="fas fa-code-branch"></i>  Projects</h5>
+        <h5 class="text-center mb-5"><i class="fas fa-code-branch"></i>  Projects (3)</h5>
         <div class="row justify-content-center">
           <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
             <div class="card shadow" style="border-top:3px solid orange">
               <div class="card-body">
                 <h5>Arati Electronics</h5>
-                <a href="project.html" class="btn btn-md btn-outline-warning border rounded-pill mt-3"><i class="fas fa-arrow-circle-right"></i></a>
+                <a href="project.php" class="btn btn-md btn-outline-warning border rounded-pill mt-3"><i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
           </div>
@@ -77,7 +42,7 @@
             <div class="card shadow" style="border-top:3px solid orange">
               <div class="card-body">
                 <h5>Banstech</h5>
-                <a href="project.html" class="btn btn-md btn-outline-warning border rounded-pill mt-3"><i class="fas fa-arrow-circle-right"></i></a>
+                <a href="project.php" class="btn btn-md btn-outline-warning border rounded-pill mt-3"><i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
           </div>
@@ -85,7 +50,7 @@
             <div class="card shadow" style="border-top:3px solid orange">
               <div class="card-body">
                 <h5>Additive Mea</h5>
-                <a href="project.html" class="btn btn-md btn-outline-warning border rounded-pill mt-3"><i class="fas fa-arrow-circle-right"></i></a>
+                <a href="project.php" class="btn btn-md btn-outline-warning border rounded-pill mt-3"><i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
           </div>
@@ -132,7 +97,7 @@
 
   <div style="height:40vh"></div>
 
-  <footer><p class="text text-center">BitRace Copyright &copy; 2021 Copyright Holder All Rights Reserved.</p> </footer>
+  <footer><p class="text text-center">&copy; 2021 BitRace Copyright Holder All Rights Reserved.</p> </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>

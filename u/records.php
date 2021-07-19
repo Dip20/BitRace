@@ -17,17 +17,20 @@
   <body>
     <!-- nav starts here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html"><img src="../img/brand-logo.png" alt="Brand name">  BitRace</a>
+      <a class="navbar-brand" href="index.php"><img src="../img/brand-logo.png" alt="Brand name">  BitRace</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a class="nav-link" href="index.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-users-cog"></i> Users</a>
+            <a class="nav-link" href="#"><i class="fas fa-users-cog"></i> Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apis.php"><i class="fas fa-hockey-puck"></i> API</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-tools"></i> App Settings</a>
@@ -45,7 +48,7 @@
         </li>
         </ul>
         <span class="navbar-text">
-        <a href="project.html" class="btn btn-warning btn-sm text-white" type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Settings  <i class="fas fa-cogs"></i></a>
+        <a href="#" class="btn btn-warning btn-sm text-white" type="button">Add Record <i class="fas fa-plus-circle"></i></a>
         <a href="#" class="btn btn-danger btn-sm text-white" >Archived <i class="fas fa-trash"></i></a>
 
         </span>
@@ -56,7 +59,7 @@
     <!-- breadcrumb starts here -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item " aria-current="page">Arati Electronics </li>
+        <li class="breadcrumb-item " aria-current="page"> <a href="project.php?projectID=54874512dsds9sdgsbjd845dsd">Arati Electronics</a> </li>
         <li class="breadcrumb-item active" aria-current="page">View Records</li>
       </ol>
     </nav>
@@ -142,7 +145,7 @@
 
   <div style="height:40vh"></div>
 
-  <footer><p class="text text-center">BitRace Copyright &copy; 2021 Copyright Holder All Rights Reserved.</p> </footer>
+  <footer><p class="text text-center">&copy; 2021 BitRace Copyright Holder All Rights Reserved.</p> </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
